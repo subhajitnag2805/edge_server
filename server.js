@@ -312,7 +312,6 @@ app.put('/sensorValues', function (request, response) {
                 //post data to memeserver
                 axios.post(config.apiUrl + 'vital/create', {
                     "individualId": id,
-                    "loginTime": Date.now(),
                     "statType": "temperature",
                     "statValue": temperature
                 }, axiosConfig)
@@ -331,7 +330,6 @@ app.put('/sensorValues', function (request, response) {
                 //post data to memeserver
                 axios.put(config.apiUrl + 'vital/create', {
                     "individualId": id,
-                    "loginTime": Date.now(),
                     "statType": "glucometer",
                     "statValue": glucometer
                 }, axiosConfig)
@@ -350,7 +348,6 @@ app.put('/sensorValues', function (request, response) {
                 //update data to memeserver
                 axios.put(config.apiUrl + 'vital/create', {
                     "individualId": id,
-                    "loginTime": Date.now(),
                     "statType": "bp",
                     "statValue": bp
                 }, axiosConfig)
@@ -388,7 +385,6 @@ app.put('/sensorValues', function (request, response) {
                 //update data to memeserver
                 axios.put(config.apiUrl + 'vital/create', {
                     "individualId": id,
-                    "loginTime": Date.now(),
                     "statType": "gsr",
                     "statValue": gsr
                 }, axiosConfig)
